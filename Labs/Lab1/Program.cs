@@ -30,9 +30,9 @@ namespace Lab1
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.Write("Коэффициент {0} введен неверно! \nВведите корректное значение: ", (char)(i+65));
                             Console.ForegroundColor = ConsoleColor.White;
-                            args[i] = Console.ReadLine();
-                        } while (!Double.TryParse(args[i], out Arg[i]));
-                        Arg[i] = Double.Parse(args[i]);
+                            re = Console.ReadLine();
+                        } while (!Double.TryParse(re, out Arg[i]));
+                        Arg[i] = Double.Parse(re);
                     }
                 }
             } //ввод коэффициентов из параметров командной строки

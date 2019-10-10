@@ -5,3 +5,9 @@ E:\LabsBKIT\Lab1\Lab1\obj\Debug\Lab1.csprojAssemblyReference.cache
 E:\LabsBKIT\Lab1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
 E:\LabsBKIT\Lab1\Lab1\obj\Debug\Lab1.exe
 E:\LabsBKIT\Lab1\Lab1\obj\Debug\Lab1.pdb
+E:\LabsBKIT\Labs\Lab1\bin\Debug\Lab1.exe.config
+E:\LabsBKIT\Labs\Lab1\bin\Debug\Lab1.exe
+E:\LabsBKIT\Labs\Lab1\bin\Debug\Lab1.pdb
+E:\LabsBKIT\Labs\Lab1\obj\Debug\Lab1.csprojAssemblyReference.cache
+E:\LabsBKIT\Labs\Lab1\obj\Debug\Lab1.exe
+E:\LabsBKIT\Labs\Lab1\obj\Debug\Lab1.pdb
