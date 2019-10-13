@@ -67,8 +67,8 @@ namespace Lab1
             if (Arg[0] == 0 && Arg[1] == 0)
             {
                 Console.Write("Корни уравнения: ");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Уравнение имеет бесконечное множество корней.");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Корней нет!");
                 Console.ForegroundColor = ConsoleColor.White;
             } // случай, когда коэффициенты A и B равны 0
             else if(Arg[0] == 0){
