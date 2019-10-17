@@ -11,10 +11,5 @@ namespace Lab2
         public String Type { get; set; } //название фигуры
 
         public virtual Double Area() { return 0;} //виртульный метод для нахождения площади
-
-        public override string ToString() 
-        {
-            return this.Type + " с площадью: " + this.Area();
-        }
     }
 }

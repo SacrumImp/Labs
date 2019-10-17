@@ -64,13 +64,20 @@ namespace Lab1
             dec = Arg[1] * Arg[1] - 4 * Arg[0] * Arg[2]; //вычисление дискриминанта
             ArrayList roots = new ArrayList(); //корни уравнения
 
-            if (Arg[0] == 0 && Arg[1] == 0)
+            if (Arg[0] == 0 && Arg[1] == 0 && Arg[2] == 0)
+            {
+                Console.Write("Корни уравнения: ");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Уравнение имеет бесконечное количество корней!");
+                Console.ForegroundColor = ConsoleColor.White;
+            } // случай, когда коэффициенты A и B равны 0
+            else if (Arg[0] == 0 && Arg[1] == 0)
             {
                 Console.Write("Корни уравнения: ");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Корней нет!");
                 Console.ForegroundColor = ConsoleColor.White;
-            } // случай, когда коэффициенты A и B равны 0
+            } // случай, когда коэффициенты A и B и C равны 0
             else if(Arg[0] == 0){
                 bf = -Arg[2] / Arg[1];
                 if (bf > 0)

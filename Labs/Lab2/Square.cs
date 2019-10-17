@@ -10,11 +10,14 @@ namespace Lab2
     {
         public Square(Double a) : base(a, a) { this.Type = "Квадрат"; }
 
-        public override Double Area() { return this.Height * this.Width; }
-
         public void Print()
         {
             Console.WriteLine(this.ToString());
+        }
+
+        public override string ToString()
+        {
+            return this.Type + " с площадью: " + this.Area();
         }
     }
 }
