@@ -80,7 +80,7 @@ namespace Lab1
             } // случай, когда коэффициенты A и B и C равны 0
             else if(Arg[0] == 0){
                 bf = -Arg[2] / Arg[1];
-                if (bf > 0)
+                if (bf >= 0)
                 {
                     roots.Add(Math.Sqrt(bf));
                     if (bf != 0) roots.Add(-Math.Sqrt(bf));
