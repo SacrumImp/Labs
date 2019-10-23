@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab2
 {
-    abstract class GeoFigure //абстрактный класс геометрических фигур
+    abstract public class GeoFigure //абстрактный класс геометрических фигур
     {
         public String Type { get; set; } //название фигуры
 

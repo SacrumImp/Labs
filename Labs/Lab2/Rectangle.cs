@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab2
 {
-    class Rectangle : GeoFigure, IPrint //класс прямоугольника 
+    public class Rectangle : GeoFigure, IPrint //класс прямоугольника 
     {
         public Double Height { get; set; }
         public Double Width { get; set; }
