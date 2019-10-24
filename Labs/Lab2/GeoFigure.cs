@@ -14,7 +14,11 @@ namespace Lab2
 
         public int CompareTo(object a)
         {
-            return 0;
+            GeoFigure Fig = (GeoFigure)a;
+
+            if (this.Area() < Fig.Area()) return -1;
+            else if (this.Area() == Fig.Area()) return 0;
+            else return 1;
         }
     }
 }
