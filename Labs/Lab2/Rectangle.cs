@@ -22,7 +22,7 @@ namespace Lab2
 
         public override string ToString()
         {
-            return this.Type + " с площадью: " + this.Area();
+            return this.Type + " с высотой " + this.Height + ", шириной " + this.Width + " и площадью " + this.Area();
         }
 
     }

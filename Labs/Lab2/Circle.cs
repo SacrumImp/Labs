@@ -21,7 +21,7 @@ namespace Lab2
 
         public override string ToString()
         {
-            return this.Type + " с площадью: " + this.Area();
+            return this.Type + " c радиусом " + this.Radius + " и площадью " + this.Area();
         }
     }
 }
