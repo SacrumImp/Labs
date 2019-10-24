@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab2
 {
-    class Circle : GeoFigure, IPrint //класс круга
+    public class Circle : GeoFigure, IPrint //класс круга
     {
         public Double Radius {get; set;}
 
