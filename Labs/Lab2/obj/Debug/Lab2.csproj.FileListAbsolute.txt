@@ -10,3 +10,9 @@ E:\LabsBKIT\Labs\Lab2\bin\Debug\Lab2.pdb
 E:\LabsBKIT\Labs\Lab2\obj\Debug\Lab2.csprojAssemblyReference.cache
 E:\LabsBKIT\Labs\Lab2\obj\Debug\Lab2.exe
 E:\LabsBKIT\Labs\Lab2\obj\Debug\Lab2.pdb
+C:\LabsBKIT\Labs\Lab2\bin\Debug\Lab2.exe.config
+C:\LabsBKIT\Labs\Lab2\bin\Debug\Lab2.exe
+C:\LabsBKIT\Labs\Lab2\bin\Debug\Lab2.pdb
+C:\LabsBKIT\Labs\Lab2\obj\Debug\Lab2.csprojAssemblyReference.cache
+C:\LabsBKIT\Labs\Lab2\obj\Debug\Lab2.exe
+C:\LabsBKIT\Labs\Lab2\obj\Debug\Lab2.pdb

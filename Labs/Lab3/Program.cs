@@ -29,12 +29,12 @@ namespace Lab3
             foreach (GeoFigure obj in Arr) Console.WriteLine(obj.Area());
 
             Console.WriteLine("\n\tList");
-            List<GeoFigure> Lis = new List<GeoFigure>();
+            List<GeoFigure> Lis = new List<GeoFigure>(); //коллекция класса List
             GeoFigure buf;
             Lis.Add(rect);
             Lis.Add(sqr);
             Lis.Add(cir);
-            for (int i = 0; i < Lis.Count; i++)
+            for (int i = 0; i < Lis.Count; i++) //сортировка
                 for (int j = 0; j < (Lis.Count - (i + 1)); j++)
                 {
                     if (Lis[j].CompareTo(Lis[j + 1]) == 1)
@@ -45,6 +45,13 @@ namespace Lab3
                     }
                 }
             foreach (GeoFigure obj in Lis) Console.WriteLine(obj.Area());
+
+            Console.WriteLine("\n\tMatrix");
+            Matrix<GeoFigure> matr = new Matrix<GeoFigure>(3, 3, 3); //пример использования матрицы
+            matr[1, 1, 0] = rect;
+            matr[1, 1, 2] = sqr;
+            matr[2, 2, 1] = cir;
+            Console.WriteLine(matr.ToString());
 
             Console.ReadKey();
         }
