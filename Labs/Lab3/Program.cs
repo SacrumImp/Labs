@@ -53,6 +53,15 @@ namespace Lab3
             matr[2, 2, 1] = cir;
             Console.WriteLine(matr.ToString());
 
+            Console.WriteLine("\n\tSimpleStack");
+            SimpleStack<GeoFigure> stack = new SimpleStack<GeoFigure>();
+            stack.Push(rect);
+            stack.Push(sqr);
+            stack.Push(cir);
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+
             Console.ReadKey();
         }
     }

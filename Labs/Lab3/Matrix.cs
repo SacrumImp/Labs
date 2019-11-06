@@ -31,7 +31,7 @@ namespace Lab3
             }
         }
 
-        string ContKey(int x, int y, int z)
+        string ContKey(int x, int y, int z) //преобразование адреса элемента в строку
         {
             return x.ToString() + " ; " + y.ToString() + " ; " + z.ToString();
         }
@@ -66,7 +66,7 @@ namespace Lab3
             }
         }
 
-        public override string ToString()
+        public override string ToString() //метод toString для матриц
         {
             StringBuilder b = new StringBuilder();
 
