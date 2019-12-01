@@ -2,7 +2,7 @@
 
 namespace Lab5
 {
-    public class Wagner
+    public class Levenstayn
     {
         public int findDistance(string str1, string str2)
         {
@@ -20,7 +20,7 @@ namespace Lab5
             int[,] matr = new int[str1Len + 1, str2Len + 1]; //матрица
             for (int i = 0; i <= str1Len; i++) matr[i, 0] = i; //заполнение нулевой строки и столбцов
             for (int j = 0; j <= str2Len; j++) matr[0, j] = j;
-            for(int i = 1; i <= str2Len; i++) 
+            for(int i = 1; i <= str1Len; i++) 
             { 
                 for (int j = 1; j <= str2Len; j++)
                 {
@@ -29,10 +29,10 @@ namespace Lab5
                     int ins = matr[i, j - 1] + 1; //добавление
                     int del = matr[i - 1, j] + 1; //удаление
                     int subst = matr[i - 1, j - 1] + sEq;
-                    matr[i, j] = Math.Min(Math.Min(ins, del), sEq); //выбор минимальной длины
+                    matr[i, j] = Math.Min(Math.Min(ins, del), subst); //выбор минимальной длины
                     
                     //Дамерау
-                    if((i > 1) && (str1.Substring(i - 1, 1) == str2.Substring(j - 2, 1)) &&
+                    if((i > 1) && (j > 1) && (str1.Substring(i - 1, 1) == str2.Substring(j - 2, 1)) &&
                     (str1.Substring(i - 2, 1) == str2.Substring(j - 1, 1)))
                     {
                         matr[i, j] = Math.Min(matr[i, j],

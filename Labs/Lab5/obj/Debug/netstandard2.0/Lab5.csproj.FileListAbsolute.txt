@@ -1,0 +1,8 @@
+C:\LabsBKIT\Labs\Lab5\bin\Debug\netstandard2.0\Lab5.deps.json
+C:\LabsBKIT\Labs\Lab5\bin\Debug\netstandard2.0\Lab5.dll
+C:\LabsBKIT\Labs\Lab5\bin\Debug\netstandard2.0\Lab5.pdb
+C:\LabsBKIT\Labs\Lab5\obj\Debug\netstandard2.0\Lab5.csprojAssemblyReference.cache
+C:\LabsBKIT\Labs\Lab5\obj\Debug\netstandard2.0\Lab5.AssemblyInfoInputs.cache
+C:\LabsBKIT\Labs\Lab5\obj\Debug\netstandard2.0\Lab5.AssemblyInfo.cs
+C:\LabsBKIT\Labs\Lab5\obj\Debug\netstandard2.0\Lab5.dll
+C:\LabsBKIT\Labs\Lab5\obj\Debug\netstandard2.0\Lab5.pdb

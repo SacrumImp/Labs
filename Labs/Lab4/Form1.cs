@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using Lab5;
 
 namespace Lab4
 {
@@ -49,37 +50,70 @@ namespace Lab4
             label3.ForeColor = Color.Black;
             Stopwatch t = new Stopwatch();
 
-            t.Start();
-            if (find != "")
-            {
-                label3.ForeColor = Color.Red;
-                label3.Text = "Слово не найдено!";
+            Levenstayn Lev = new Levenstayn();
+            int dis;
+            int maxDis;
+            if (int.TryParse(textBox5.Text, out maxDis)) maxDis = int.Parse(textBox5.Text);
 
-                listBox1.BeginUpdate();
-                listBox1.Items.Clear();
-                foreach (string str in words) 
+            if (!checkBox1.Checked)
+            {
+                t.Start();
+                if (find != "")
                 {
-                    if (str.Contains(find))
+                    label3.ForeColor = Color.Red;
+                    label3.Text = "Слово не найдено!";
+
+                    listBox1.BeginUpdate();
+                    listBox1.Items.Clear();
+
+                    foreach (string str in words)
                     {
-                        label3.ForeColor = Color.Green;
-                        label3.Text = "Слово найдено!";
-                        listBox1.Items.Add(str);
+                        if (str.Contains(find))
+                        {
+                            label3.ForeColor = Color.Green;
+                            label3.Text = "Слово найдено!";
+                            listBox1.Items.Add(str);
+                        }
                     }
+                    listBox1.EndUpdate();
                 }
-                listBox1.EndUpdate();
+                else
+                {
+                    label3.ForeColor = Color.Red;
+                    label3.Text = "Слово не введено!";
+                }
+                t.Stop();
+                textBox3.Text = t.Elapsed.ToString();
             }
             else
             {
-                label3.ForeColor = Color.Red;
-                label3.Text = "Слово не введено!";
+                if (find != "")
+                {
+                    label3.ForeColor = Color.Red;
+                    label3.Text = "Слово не найдено!";
+
+                    listBox1.BeginUpdate();
+                    listBox1.Items.Clear();
+
+                    foreach (string str in words)
+                    {
+                        dis = Lev.findDistance(str, find);
+                        if (!(int.TryParse(textBox5.Text, out maxDis)) || (dis <= maxDis))
+                        {
+                            label3.ForeColor = Color.Green;
+                            label3.Text = "Слово найдено!";
+
+                            listBox1.Items.Add(str);
+                        }
+                    }
+                    listBox1.EndUpdate();
+                }
+                else
+                {
+                    label3.ForeColor = Color.Red;
+                    label3.Text = "Слово не введено!";
+                }
             }
-            t.Stop();
-            textBox3.Text = t.Elapsed.ToString();
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
