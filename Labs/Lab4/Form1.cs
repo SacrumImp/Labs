@@ -52,20 +52,21 @@ namespace Lab4
             t.Start();
             if (find != "")
             {
-                if (words.Contains(find)) 
-                {
-                    label3.ForeColor = Color.Green;
-                    label3.Text = "Слово найдено!";
+                label3.ForeColor = Color.Red;
+                label3.Text = "Слово не найдено!";
 
-                    listBox1.BeginUpdate();
-                    listBox1.Items.Add(find);
-                    listBox1.EndUpdate();
-                }
-                else
+                listBox1.BeginUpdate();
+                listBox1.Items.Clear();
+                foreach (string str in words) 
                 {
-                    label3.ForeColor = Color.Red;
-                    label3.Text = "Слово не найдено!";
+                    if (str.Contains(find))
+                    {
+                        label3.ForeColor = Color.Green;
+                        label3.Text = "Слово найдено!";
+                        listBox1.Items.Add(str);
+                    }
                 }
+                listBox1.EndUpdate();
             }
             else
             {
@@ -74,6 +75,11 @@ namespace Lab4
             }
             t.Stop();
             textBox3.Text = t.Elapsed.ToString();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

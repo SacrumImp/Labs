@@ -2,7 +2,7 @@
 
 namespace Lab5
 {
-    public class Vagner
+    public class Wagner
     {
         public int findDistance(string str1, string str2)
         {
