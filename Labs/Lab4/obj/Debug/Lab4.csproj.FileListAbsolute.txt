@@ -10,3 +10,15 @@ C:\LabsBKIT\Labs\Lab4\obj\Debug\Lab4.csprojAssemblyReference.cache
 C:\LabsBKIT\Labs\Lab4\bin\Debug\Lab5.dll
 C:\LabsBKIT\Labs\Lab4\bin\Debug\Lab5.pdb
 C:\LabsBKIT\Labs\Lab4\obj\Debug\Lab4.csproj.CopyComplete
+C:\Labs\Labs\Lab4\obj\Debug\Lab4.csprojAssemblyReference.cache
+C:\Labs\Labs\Lab4\obj\Debug\Lab4.Form1.resources
+C:\Labs\Labs\Lab4\obj\Debug\Lab4.Properties.Resources.resources
+C:\Labs\Labs\Lab4\obj\Debug\Lab4.csproj.GenerateResource.cache
+C:\Labs\Labs\Lab4\obj\Debug\Lab4.exe
+C:\Labs\Labs\Lab4\obj\Debug\Lab4.pdb
+C:\Labs\Labs\Lab4\bin\Debug\Lab4.exe.config
+C:\Labs\Labs\Lab4\bin\Debug\Lab4.exe
+C:\Labs\Labs\Lab4\bin\Debug\Lab4.pdb
+C:\Labs\Labs\Lab4\bin\Debug\Lab5.dll
+C:\Labs\Labs\Lab4\bin\Debug\Lab5.pdb
+C:\Labs\Labs\Lab4\obj\Debug\Lab4.csproj.CopyComplete

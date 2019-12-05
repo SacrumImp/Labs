@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\LabsBKIT\\Labs\\Labs\\Lab5\\Lab5.csproj",
+      "projectUniqueName": "C:\\Labs\\Labs\\Lab5\\Lab5.csproj",
       "projectName": "Lab5",
-      "projectPath": "C:\\LabsBKIT\\Labs\\Labs\\Lab5\\Lab5.csproj",
+      "projectPath": "C:\\Labs\\Labs\\Lab5\\Lab5.csproj",
       "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
-      "outputPath": "C:\\LabsBKIT\\Labs\\Labs\\Lab5\\obj\\",
+      "outputPath": "C:\\Labs\\Labs\\Lab5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
