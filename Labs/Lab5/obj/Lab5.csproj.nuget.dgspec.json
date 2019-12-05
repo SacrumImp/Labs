@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\LabsBKIT\\Labs\\Lab5\\Lab5.csproj": {}
+    "C:\\LabsBKIT\\Labs\\Labs\\Lab5\\Lab5.csproj": {}
   },
   "projects": {
-    "C:\\LabsBKIT\\Labs\\Lab5\\Lab5.csproj": {
+    "C:\\LabsBKIT\\Labs\\Labs\\Lab5\\Lab5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LabsBKIT\\Labs\\Lab5\\Lab5.csproj",
+        "projectUniqueName": "C:\\LabsBKIT\\Labs\\Labs\\Lab5\\Lab5.csproj",
         "projectName": "Lab5",
-        "projectPath": "C:\\LabsBKIT\\Labs\\Lab5\\Lab5.csproj",
-        "packagesPath": "C:\\Users\\Vladislav\\.nuget\\packages\\",
-        "outputPath": "C:\\LabsBKIT\\Labs\\Lab5\\obj\\",
+        "projectPath": "C:\\LabsBKIT\\Labs\\Labs\\Lab5\\Lab5.csproj",
+        "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
+        "outputPath": "C:\\LabsBKIT\\Labs\\Labs\\Lab5\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Vladislav\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
