@@ -9,7 +9,7 @@ namespace Lab6
     class Card
     {
         public String name;
-        public int id;
+        public int id { get; set; }
         public string currency;
         private double money;
 

@@ -116,13 +116,16 @@ namespace Lab6
             //вторая часть 
 
             Type c = typeof(Card);
-            Console.WriteLine("\n\tИнформация о классе Card:");
+            Console.WriteLine("\n\n\tИнформация о классе Card:");
             Console.WriteLine("Находится в сборке " + c.AssemblyQualifiedName);
             Console.WriteLine("Пространство имен " + c.Namespace);
             Console.WriteLine("Тип " + c.FullName);
 
             Console.WriteLine("\n\tПоля данных (public):");
             foreach (var x in c.GetFields()) { Console.WriteLine(x); }
+
+            Console.WriteLine("\n\tСвойства:"); 
+            foreach (var x in c.GetProperties()) { Console.WriteLine(x); }
 
             Console.WriteLine("\n\tКонструкторы:"); 
             foreach (var x in c.GetConstructors()) { Console.WriteLine(x); }
