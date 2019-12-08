@@ -9,6 +9,7 @@ namespace Lab6
 {
     class Program
     {
+
         delegate int Compare(int p1, string p2); //делегат
 
         static int CompareEq(int p1, string p2) //метод, соответствующий делегату
@@ -74,6 +75,7 @@ namespace Lab6
 
         static void Main(string[] args)
         {
+            Console.Title = "Алпеев Владислав ИУ5-34Б";
             int i = 6;
             Console.Write("Пример:\nЧисло для сравнения: {0}\nПередача метода в качестве параметра-делегата: \n\t", i);
             Write(i, CompareEq); //вызов метода с параметром-делегатом
@@ -144,9 +146,9 @@ namespace Lab6
 
             Console.WriteLine("\n\tВызов метода с использованием рефлексии: ");
             Card card1 = new Card("MyName", 12345);
-            card1.setValue(100, "RUB");
-            c.InvokeMember("ChangetoUSD", BindingFlags.InvokeMethod, null, card1, null);
-            Console.WriteLine("ChangetoUSD():\n");
+            card1.setValue(100, "RUB"); //новый экземпляр класса
+            c.InvokeMember("ChangetoUSD", BindingFlags.InvokeMethod, null, card1, null); //вызов функции при помощи рефлексии
+            Console.WriteLine("ChangetoUSD():");
             card1.Print();
 
             Console.ReadKey();
