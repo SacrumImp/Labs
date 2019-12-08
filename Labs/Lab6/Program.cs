@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -124,14 +125,29 @@ namespace Lab6
             Console.WriteLine("\n\tПоля данных (public):");
             foreach (var x in c.GetFields()) { Console.WriteLine(x); }
 
-            Console.WriteLine("\n\tСвойства:"); 
-            foreach (var x in c.GetProperties()) { Console.WriteLine(x); }
+            Console.WriteLine("\n\tСвойства:");
+            foreach (var x in c.GetProperties()) //вывод свойств, имеющих атрибуты
+            {
+                var findAttribute = x.GetCustomAttributes(false);
+                if (findAttribute.Length > 0) 
+                {
+                    MyAttribute attr = findAttribute[0] as MyAttribute;
+                    Console.WriteLine("{0} - {1}", x, attr.Description);
+                } 
+            }
 
             Console.WriteLine("\n\tКонструкторы:"); 
             foreach (var x in c.GetConstructors()) { Console.WriteLine(x); }
 
             Console.WriteLine("\n\tМетоды:"); 
             foreach (var x in c.GetMethods()) { Console.WriteLine(x); }
+
+            Console.WriteLine("\n\tВызов метода с использованием рефлексии: ");
+            Card card1 = new Card("MyName", 12345);
+            card1.setValue(100, "RUB");
+            c.InvokeMember("ChangetoUSD", BindingFlags.InvokeMethod, null, card1, null);
+            Console.WriteLine("ChangetoUSD():\n");
+            card1.Print();
 
             Console.ReadKey();
         }

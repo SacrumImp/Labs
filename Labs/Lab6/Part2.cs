@@ -6,15 +6,21 @@ using System.Threading.Tasks;
 
 namespace Lab6
 {
-    class Card
+    class Card //класс дл карт
     {
         public String name;
-        public int id { get; set; }
+        [MyAttribute("Описание для номера карты")] //атрибут для карты
+        public int id { get; set; } //свойство (выводится, так как есть атрибут)
+        public int paramWithoutAttr { get; set; } //свойство для тестирования (не выводится, так как нет атрибута)
         public string currency;
-        private double money;
+        private double money = 0;
 
         public Card() { }
-        public Card(String str, int id) { }
+        public Card(String str, int id) 
+        {
+            this.name = str;
+            this.id = id;
+        }
         public void setValue(int val, string cur) 
         {
             this.currency = cur.ToUpper();
@@ -48,5 +54,12 @@ namespace Lab6
         {
             Console.WriteLine("\tВладилец карты: {0}\n\tВалюта: {1}\n\tОбщая сумма: {2}", this.name, this.currency, this.money);
         }
+    }
+
+    public class MyAttribute : Attribute //класс атрибутов
+    {
+        public MyAttribute() { }
+        public MyAttribute(string DescriptionParam) { Description = DescriptionParam; }
+        public string Description { get; set; }
     }
 }
