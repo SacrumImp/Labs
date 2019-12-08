@@ -81,7 +81,7 @@ namespace Lab3
                     }
                     for (int i = 0; i < this.X; i++)
                     {
-                        b.Append("[");
+                        
                         if (this[i, j, k] != null)
                         {
                             b.Append(this[i, j, k].ToString());
@@ -90,7 +90,7 @@ namespace Lab3
                         {
                             b.Append(" - ");
                         }
-                        b.Append("] ");
+                        
                     }
                 }
                 b.Append("]\n");

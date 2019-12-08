@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using System.Text;
 using Lab5;
 
 namespace Lab4
@@ -27,7 +28,7 @@ namespace Lab4
             if (fi.ShowDialog() == DialogResult.OK)
             {
                 t.Start();
-                string data = File.ReadAllText(fi.FileName);
+                string data = File.ReadAllText(fi.FileName, Encoding.GetEncoding(1251));
                 string[] elems;
                 elems = data.Split(seps, StringSplitOptions.RemoveEmptyEntries);
                 foreach(string element in elems)
@@ -46,7 +47,7 @@ namespace Lab4
         private void button2_Click(object sender, EventArgs e)
         {
             string find;
-            find = textBox2.Text;
+            find = textBox2.Text.ToUpper();
             label3.ForeColor = Color.Black;
             Stopwatch t = new Stopwatch();
 
@@ -68,7 +69,7 @@ namespace Lab4
 
                     foreach (string str in words)
                     {
-                        if (str.Contains(find))
+                        if (str.ToUpper().Contains(find))
                         {
                             label3.ForeColor = Color.Green;
                             label3.Text = "Слово найдено!";
@@ -97,7 +98,7 @@ namespace Lab4
 
                     foreach (string str in words)
                     {
-                        dis = Lev.findDistance(str, find);
+                        dis = Lev.findDistance(str.ToUpper(), find);
                         if (!(int.TryParse(textBox5.Text, out maxDis)) || (dis <= maxDis))
                         {
                             label3.ForeColor = Color.Green;
