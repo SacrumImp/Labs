@@ -1,0 +1,12 @@
+C:\LabsBKIT\Labs\LabDZ\bin\Debug\Lab4.exe.config
+C:\LabsBKIT\Labs\LabDZ\bin\Debug\Lab4.exe
+C:\LabsBKIT\Labs\LabDZ\bin\Debug\Lab4.pdb
+C:\LabsBKIT\Labs\LabDZ\bin\Debug\Lab5.dll
+C:\LabsBKIT\Labs\LabDZ\bin\Debug\Lab5.pdb
+C:\LabsBKIT\Labs\LabDZ\obj\Debug\LabDZ.csprojAssemblyReference.cache
+C:\LabsBKIT\Labs\LabDZ\obj\Debug\Lab4.Form1.resources
+C:\LabsBKIT\Labs\LabDZ\obj\Debug\Lab4.Properties.Resources.resources
+C:\LabsBKIT\Labs\LabDZ\obj\Debug\LabDZ.csproj.GenerateResource.cache
+C:\LabsBKIT\Labs\LabDZ\obj\Debug\LabDZ.csproj.CopyComplete
+C:\LabsBKIT\Labs\LabDZ\obj\Debug\Lab4.exe
+C:\LabsBKIT\Labs\LabDZ\obj\Debug\Lab4.pdb
