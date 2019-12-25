@@ -6,8 +6,11 @@ using System.IO;
 using System.Diagnostics;
 using System.Text;
 using Lab5;
+<<<<<<< HEAD
 using System.Threading;
 using System.Threading.Tasks;
+=======
+>>>>>>> 4c4024f7dbf2d4384ecdcffdef9a3f3796d2cf69
 
 namespace Lab4
 {
@@ -21,6 +24,7 @@ namespace Lab4
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         public static List<ParallelSearchResult> ArrayThreadTask(object paramObj)
         {
             ParallelSearchThreadParam param = (ParallelSearchThreadParam)paramObj;
@@ -51,6 +55,8 @@ namespace Lab4
             return Result;
         }
 
+=======
+>>>>>>> 4c4024f7dbf2d4384ecdcffdef9a3f3796d2cf69
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog fi = new OpenFileDialog();
@@ -76,7 +82,10 @@ namespace Lab4
             }
 
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4c4024f7dbf2d4384ecdcffdef9a3f3796d2cf69
         private void button2_Click(object sender, EventArgs e)
         {
             string find;
@@ -84,6 +93,10 @@ namespace Lab4
             label3.ForeColor = Color.Black;
             Stopwatch t = new Stopwatch();
 
+<<<<<<< HEAD
+=======
+            Levenstayn Lev = new Levenstayn();
+>>>>>>> 4c4024f7dbf2d4384ecdcffdef9a3f3796d2cf69
             int dis;
             int maxDis;
             if (int.TryParse(textBox5.Text, out maxDis)) maxDis = int.Parse(textBox5.Text);
@@ -118,6 +131,7 @@ namespace Lab4
                 t.Stop();
                 textBox3.Text = t.Elapsed.ToString();
             }
+<<<<<<< HEAD
             else if(channels.Checked)
             {
                 int nCh = 1;
@@ -205,6 +219,9 @@ namespace Lab4
                     label3.Text = "Слово не введено!";
                 }
             }
+=======
+            else if(!channels.Checked)
+>>>>>>> 4c4024f7dbf2d4384ecdcffdef9a3f3796d2cf69
             else
             {
                 if (find != "")
@@ -217,7 +234,11 @@ namespace Lab4
 
                     foreach (string str in words)
                     {
+<<<<<<< HEAD
                         dis = Levenstayn.findDistance(str.ToUpper(), find);
+=======
+                        dis = Lev.findDistance(str.ToUpper(), find);
+>>>>>>> 4c4024f7dbf2d4384ecdcffdef9a3f3796d2cf69
                         if (!(int.TryParse(textBox5.Text, out maxDis)) || (dis <= maxDis))
                         {
                             label3.ForeColor = Color.Green;
