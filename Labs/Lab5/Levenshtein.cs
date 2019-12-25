@@ -4,7 +4,7 @@ namespace Lab5
 {
     public class Levenstayn
     {
-        public int findDistance(string str1, string str2)
+        public static int findDistance(string str1, string str2)
         {
             int str1Len = str1.Length;
             int str2Len = str2.Length;
